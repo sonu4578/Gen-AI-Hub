@@ -13,41 +13,41 @@ After the API returns the response from the AI model, the response is shown in t
 
 ## Setup Instructions
 
-1. Clone the repository. This project has two main parts:
+Clone the repository. This project has two main parts:
    ai-interaction-backend: A Python Flask API that interacts with the APIs from OpenAI and Anthropic 
    ai-interaction-portal: A React UI Portal that shows a simple UI page to submit questions to AI Models and see the responses in real time
 
-# Setup the API service
+### Setup the API service
 
-2. Open a new terminal window and go into the ai-interaction-backend folder
+1. Open a new terminal window and go into the ai-interaction-backend folder
 
 cd ai-interaction-backend
 
 
-On MacOS set the virtual environment:
+2. On MacOS set the virtual environment:
 python3 -m venv venv
 source venv/bin/activate
 
-Install the required dependencies:
+3. Install the required dependencies:
 
 pip install flask openai anthropic
 pip install python-dotenv
 pip install flask-cors
 
-3.export the environment variables to set the API Keys
+4. Export the environment variables to set the API Keys
 
 export OPENAI_API_KEY=<Add-API-Key-Here>
 export ANTHROPIC_API_KEY=<Add-API-Key-Here>
 
-Start the application
+5. Start the application
 
 python app.py
 
-# Setup the UI application
+### Setup the UI application
 
-2. Open a new terminal window and go into the ai-interaction-portal folder
+1. Open a new terminal window and go into the ai-interaction-portal folder
    cd ai-interaction-portal
-3. Install the required dependencies
+2. Install the required dependencies
 
 npm install axios
 npm install bootstrap
@@ -57,16 +57,16 @@ npm install marked
 npm install markdown-it
 npm install --save @testing-library/react @testing-library/jest-dom @testing-library/user-event jest\n
 
-4. Start the NodeJS App
+3. Start the NodeJS App
 
 npm start
 
-5. Go to the Web UI at: http://localhost:3000/
+4. Go to the Web UI at: http://localhost:3000/
 
-6. Select the AI model from the drop down
+5. Select the AI model from the drop down
 
-7. Enter the System Prompt User Input
+6. Enter the System Prompt User Input
 
-8. Click the Submit button to see the real time response from the selected AI Model 
+7. Click the Submit button to see the real time response from the selected AI Model.
 
 
