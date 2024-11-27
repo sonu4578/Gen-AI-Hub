@@ -8,13 +8,13 @@ The home page of the UI portal shows a welcome message and a form to ask questio
 
 <img src="https://github.com/user-attachments/assets/7812f181-9d9a-4de2-9e8e-05a29e5ef1e2" width="600" height="350">
 
-![image](https://github.com/user-attachments/assets/7812f181-9d9a-4de2-9e8e-05a29e5ef1e2)
-
 After selecting the model and submitting the question, the UI portal calls the backend API to get a response from the selected AI model. 
 A rotating circle is shown while the UI is waiting for a response from the API
 After the API returns the response from the AI model, the response is shown in the UI page
 
-![image](https://github.com/user-attachments/assets/d9cc175f-aa19-4d1f-b42e-c23abe78ba66)
+<img src="https://github.com/user-attachments/assets/d9cc175f-aa19-4d1f-b42e-c23abe78ba66" width="600" height="350">
+
+![image]()
 
 ## Setup Instructions
 
