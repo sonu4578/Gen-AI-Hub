@@ -16,7 +16,6 @@ After the API returns the response from the AI model, the response is shown in t
 
 <img src="https://github.com/user-attachments/assets/d9cc175f-aa19-4d1f-b42e-c23abe78ba66" width="600" height="350">
 
-![image]()
 
 ## Setup Instructions
 
