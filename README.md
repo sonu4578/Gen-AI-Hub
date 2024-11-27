@@ -6,7 +6,7 @@ This project provides a simple UI interface to ask questions to AI models and vi
 
 The home page of the UI portal shows a welcome message and a form to ask questions to AI models
 
-<img src="[https://example.com/path/to/your/image.png](https://github.com/user-attachments/assets/7812f181-9d9a-4de2-9e8e-05a29e5ef1e2)" width="200" height="150">
+<img src="https://github.com/user-attachments/assets/7812f181-9d9a-4de2-9e8e-05a29e5ef1e2" width="200" height="150">
 
 ![image](https://github.com/user-attachments/assets/7812f181-9d9a-4de2-9e8e-05a29e5ef1e2)
 
