@@ -1,4 +1,4 @@
-# Gen AI Hub - A Gateway to a wide range of AI Models
+# Gen AI Hub
 
 This project provides a simple UI interface to ask questions to AI models and view the responses in real time
 
