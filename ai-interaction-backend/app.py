@@ -41,20 +41,22 @@ def ask_ai():
 
     #Send the calls to the appropriate API based on the model selected
     if model.startswith("OpenAI"):
-        return openai_response(system_prompt, user_input)
+        return openai_response(model, system_prompt, user_input)
     elif model.startswith("Anthropic"):
-        return anthropic_response(system_prompt, user_input)
+        return anthropic_response(model, system_prompt, user_input)
     else:
         return jsonify({"error": "Invalid model selected"}), 400
 
 
 #Implementation for calling the OpenAI API
-def openai_response(system_prompt, user_input):
+def openai_response(model, system_prompt, user_input):
     try:
         #Create the client
         client = OpenAI(
             api_key=os.environ.get("OPENAI_API_KEY"),  # This is the default and can be omitted
         )
+
+        model_id = model.split("OpenAI-")[1]
 
         #Send the prompt to the AI model using an API call
         response = client.chat.completions.create(
@@ -64,7 +66,7 @@ def openai_response(system_prompt, user_input):
                     "content": system_prompt + "\n" + user_input,
                 }
             ],
-            model="gpt-4o",
+            model=model_id,
         )
 
         return jsonify({"response": response.choices[0].message.content})
@@ -75,15 +77,17 @@ def openai_response(system_prompt, user_input):
         return jsonify({"error": "An error occurred while processing the request. Please check the request parameters or contact the administrator if the problem persists."}), 500
 
 #Implementation for calling the Anthropic API
-def anthropic_response(system_prompt, user_input):
+def anthropic_response(model, system_prompt, user_input):
     try:
 
         #Create a client
         client = anthropic.Client()
 
+        model_id = model.split("Anthropic-")[1]
+
         #Send the prompt to the AI model using an API call
         response = client.messages.create(
-            model="claude-3-sonnet-20240229",
+            model=model_id,
             messages=[{"role": "user", "content": system_prompt + "\n" + user_input}],
             max_tokens=150
         )
