@@ -107,16 +107,10 @@ function App() {
                 <option value="Not-selected">Please select a model</option>
                 <option value="OpenAI-gpt-4">OpenAI-gpt-4</option>
                 <option value="OpenAI-gpt-3.5-turbo">OpenAI-gpt-3.5-turbo</option>
-                <option value="OpenAI-gpt-3">OpenAI-gpt-3</option>
-                <option value="OpenAI-Codex">OpenAI-Codex</option>
-                <option value="OpenAI-DALL·E 2">OpenAI-DALL·E 2</option>
-                <option value="OpenAI-DALL·E 3">OpenAI-DALL·E 3</option>
-                <option value="OpenAI-CLIP">OpenAI-CLIP</option>
-                <option value="OpenAI-Whisper">OpenAI-Whisper</option>
-
-                <option value="Anthropic-claude-1">Anthropic-claude-1</option>
-                <option value="Anthropic-claude-2">Anthropic-claude-2</option>
-                <option value="Anthropic-claude-3">Anthropic-claude-3</option>
+                <option value="Anthropic-claude-3-opus-latest">Anthropic-claude-3-opus-latest</option>
+                <option value="Anthropic-claude-3-sonnet-20240229">Anthropic-claude-3-sonnet-20240229</option>
+                <option value="Anthropic-claude-3-5-haiku-latest">Anthropic-claude-3-5-haiku-latest</option>
+                <option value="Anthropic-claude-3-5-sonnet-latest">Anthropic-claude-3-5-sonnet-latest</option>
               </select>
               {errors.model && <p className="error">{errors.model}</p>}
             </div>
