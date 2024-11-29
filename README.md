@@ -20,47 +20,60 @@ After the API returns the response from the AI model, the response is shown in t
 
 ## Setup Instructions
 
-Clone the repository. This project has two main parts:
-   ai-interaction-backend: A Python Flask API that interacts with the APIs from OpenAI and Anthropic 
-   ai-interaction-portal: A React UI Portal that shows a simple UI page to submit questions to AI Models and see the responses in real time
+To get started with the setup, first clone the repository. 
+
+This project has two main parts:
+
+1. ai-interaction-backend: A Python Flask API that interacts with the APIs from OpenAI and Anthropic 
+2. ai-interaction-portal: A React UI Portal that shows a simple UI page to submit questions to AI Models and see the responses in real time
 
 ### Setup the API service
 
 1. Open a new terminal window and go into the ai-interaction-backend folder
 
-```cd ai-interaction-backend```
+```
+cd ai-interaction-backend
+```
 
 
 2. On MacOS set the virtual environment:
-```python3 -m venv venv
+```
+python3 -m venv venv
 source venv/bin/activate
 ```
 
-4. Install the required dependencies:
+3. Install the required dependencies:
 
-```pip install flask openai anthropic
+```
+pip install flask openai anthropic
 pip install python-dotenv
 pip install flask-cors
 ```
 
 4. Export the environment variables to set the API Keys
 
-```export OPENAI_API_KEY=<Add-API-Key-Here>
+```
+export OPENAI_API_KEY=<Add-API-Key-Here>
 export ANTHROPIC_API_KEY=<Add-API-Key-Here>
 ```
 
 5. Start the application
 
-```python app.py```
+```
+python app.py
+```
 
 ### Setup the UI application
 
 1. Open a new terminal window and go into the ai-interaction-portal folder
-   ```cd ai-interaction-portal```
+   ```
+   cd ai-interaction-portal
+   ```
 
-2. Install the required dependencies
+3. Install the required dependencies
 
-```npm install axios
+```
+npm install axios
 npm install bootstrap
 npm install marked
 npm install react-markdown
@@ -71,7 +84,9 @@ npm install --save @testing-library/react @testing-library/jest-dom @testing-lib
 
 3. Start the NodeJS App
 
-```npm start```
+```
+npm start
+```
 
 4. Go to the Web UI at: http://localhost:3000/
 
